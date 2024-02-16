@@ -1,0 +1,15 @@
+ <h2 class="bg-warning text-center">Services TodoForm </h2>
+
+<div class="card alert alert-dark">
+    <div class="card-body">
+        <form [formGroup]="todoForm"(ngSubmit)="onPostAdd()">
+            <div class="form-group">
+                <label for="todoItem" >Todo Item</label>
+                <input type="text"id="todoItem" formControlName="todoItem" class="form-control">
+            </div>
+            <div class="text-right">
+                <button class="btn btn-primary">Add Todo</button>
+            </div>
+        </form>
+    </div>
+</div>
